@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/styles.css" type="text/css" >
+</head>
+<body>
+<main class="container">
+
+  <h1>Contacts</h1>
+
+
+
+
+  <section class="row">
+
+    <form id="form" class="form col-6">
+      <h2>Add Contact:</h2>
+      <input id="first-name" class="input" type="text" placeholder="First Name"  /><br />
+      <input id="last-name" class="input" type="text" placeholder="Last Name"  /><br />
+      <input id="number" class="input" type="tel" placeholder="Phone Number"  /><br />
+      <input id="street" class="input" type="text" placeholder="Street"  /><br />
+      <input id="city" class="input" type="text" placeholder="City"  /><br />
+      <input id="state" class="input" type="text" placeholder="State"  /><br />
+      <input id="submit" class="submit-btn" type="submit" value="Create Contact"  />
+    </form>
+
+    <div id="display-contact" class="display-contact col-3">
+      <h2 id="display-name" class="display-name"></h2>
+      <p id="display-phone" class="display-info"></p>
+      <p id="display-address" class="display-info"></p>
+    </div>
+
+  </section>
+
+  <section id="contacts-section">
+    <ul id="contacts-list" class="contacts-list">
+    </ul>
+  </section>
+
+</main>
+
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
