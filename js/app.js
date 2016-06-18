@@ -17,12 +17,13 @@ function newContact(first_name, last_name, number, street, city, state) {
   index = contacts.indexOf(newObj);
   $("#contacts-list").append("<li id='" + index + "' >" + first_name + " " + last_name + "</li>");
 }
-
+console.log($(".number").count());
 $("#form").on("submit", function(e) {
   e.preventDefault();
   var first_name = $("#first-name").val();
   var last_name = $("#last-name").val();
-  var number = $("#number").val();
+  var number = [];
+
   var street = $("#street").val();
   var city = $("#city").val();
   var state = $("#state").val();
