@@ -17,19 +17,26 @@
 
     <form id="form" class="form col-6">
       <h2>Add Contact:</h2>
+
       <input id="first-name" class="input" type="text" placeholder="First Name"  /><br />
       <input id="last-name" class="input" type="text" placeholder="Last Name"  /><br />
-      <input class="input number" type="tel" placeholder="Phone Number"  /><br />
+      <input id="number1" class="input number" type="tel" placeholder="Phone Number"  /><br />
       <button id="add-number-btn">Add Number</button><br />
-      <input id="street" class="input" type="text" placeholder="Street"  /><br />
-      <input id="city" class="input" type="text" placeholder="City"  /><br />
-      <input id="state" class="input" type="text" placeholder="State"  /><br />
+
+      <div id="address1" class="address">
+        <hr />
+        <input class="input street" type="text" placeholder="Street"  /><br />
+        <input class="input city" type="text" placeholder="City"  /><br />
+        <input class="input state" type="text" placeholder="State"  /><br />
+      </div>
+      <button class="add-address-btn">Add Address</button><br />
+
       <input id="submit" class="submit-btn" type="submit" value="Create Contact"  />
+
     </form>
 
     <div id="display-contact" class="display-contact col-3">
       <h2 id="display-name" class="display-name"></h2>
-      <p id="display-phone" class="display-info"></p>
       <p id="display-address" class="display-info"></p>
     </div>
 
